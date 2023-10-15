@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebration Station</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100">
+    
+  <!-- Navbar -->
+  
+  <nav class="bg-gray-100">
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div class="flex justify-between items-center">
+            <a class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700" href="#">Celebration Station</a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline-purple" aria-label="Toggle menu" onclick="toggleMenu()">
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path fill-rule="evenodd" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex flex-col md:flex-row md:-mx-4">
+            <a href="#header" class="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0">Home</a>
+            <a href="#about" class="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0">About Us</a>
+            <a href="#services" class="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0">Services</a>
+            <a href="#events" class="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0">Upcoming Events</a>
+            <a href="#bookusnow" class="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0">Book Us Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile menu -->
+      <div class="hidden bg-white shadow-lg w-full" id="mobile-menu">
+        <div class="container mx-auto px-6 py-3">
+          <a href="#header" class="block text-gray-800 font-bold my-2">Home</a>
+          <a href="#about" class="block text-gray-800 font-bold my-2">About Us</a>
+          <a href="#services" class="block text-gray-800 font-bold my-2">Services</a>
+          <a href="#events" class="block text-gray-800 font-bold my-2">Upcoming Events</a>
+          <a href="#bookusnow" class="block text-gray-800 font-bold my-2">Book Us Now</a>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Hero -->
+
+  <div class="hero bg-cover bg-center bg-no-repeat" style="background-image: url('https://th.bing.com/th/id/OIG.Qu9bDFHYV5LFefwIyeEX?pid=ImgGn');" id="header">
+      <div class="container mx-auto px-4 py-16 flex flex-col items-center justify-center ">
+        <h1 class="text-6xl font-bold tracking-wide">Celebration Station</h1>
+        <p class="text-2xl mt-4">The best event company in South Africa</p>
+        <a href="#bookusnow" class="btn mt-8">Book your event now</a>
+      </div>
+  </div>
+
+  <!-- About -->
+
+  <div class="py-16" id="about">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center">About Us</h2>
+      <p class="text-xl text-gray-600 mt-4 text-center">We are a team of passionate event planners who love to create memorable and fun experiences for our clients.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+        <div class="card p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=80&id=DA67d1tKQ9Pr&format=png" alt="Wedding icon" class="w-12 h-12"/>
+          <h3 class="text-2xl font-semibold mt-4">Weddings</h3>
+          <p class="text-gray-500 mt-2 text-center">We can help you plan your dream wedding, from the venue to the catering, from the decor to the entertainment.</p>
+        </div>
+        <div class="card p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=80&id=U41Ureyn1vCO&format=png" alt="Birthday icon" class="w-12 h-12"/>
+          <h3 class="text-2xl font-semibold mt-4">Birthdays</h3>
+          <p class="text-gray-500 mt-2 text-center">We can make your birthday party a blast, whether it's for kids or adults, whether it's a small gathering or a big bash.</p>
+        </div>
+        <div class="card p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=80&id=wG20FqoYHvVB&format=png" alt="Conference icon" class="w-12 h-12"/>
+          <h3 class="text-2xl font-semibold mt-4">Corporate Events</h3>
+          <p class="text-gray-500 mt-2 text-center">We can organize your corporate events, from seminars to workshops, from team building to product launches.</p>
+        </div>
+        <div class="card p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=80&id=YNLNxWJLEHLB&format=png" alt="Party icon" class="w-12 h-12"/>
+          <h3 class="text-2xl font-semibold mt-4">Social Events</h3>
+          <p class="text-gray-500 mt-2 text-center">We can handle your social events, from anniversaries to reunions, from festivals to concerts.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- Services -->
+
+
+  <div class="container mx-auto px-4 py-8" id="services">
+    <h1 class="text-4xl font-bold text-center text-gray-800">Our Services</h1>
+    <p class="text-lg text-center text-gray-600 mt-4">We offer a range of services to make your event memorable and hassle-free.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://img.icons8.com/?size=80&id=dkL9eYC61t89&format=png" alt="Catering service" class="w-48 h-48 object-cover mx-auto">
+        </div>
+        <div class="card-content p-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Catering</h2>
+          <p class="text-gray-600 mt-2">We provide delicious and diverse food options for your guests, from appetizers to desserts. Whether you need a buffet, a plated meal, or a cocktail reception, we have you covered.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://img.icons8.com/?size=80&id=0gIPe2gZMkDe&format=png" alt="Decor service" class="w-48 h-48 object-cover mx-auto">
+        </div>
+        <div class="card-content p-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Decor</h2>
+          <p class="text-gray-600 mt-2">We create stunning and personalized decor for your event, from flowers to lighting to furniture. We can transform any venue into your dream setting.</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://img.icons8.com/?size=80&id=vdLRVwD5w1j0&format=png" alt="Entertainment service" class="w-48 h-48 object-cover mx-auto">
+        </div>
+        <div class="card-content p-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Entertainment</h2>
+          <p class="text-gray-600 mt-2">We provide fun and engaging entertainment for your event, from live music to DJs to comedians. We can cater to any theme and audience.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upcoming Events -->
+
+  <div class="py-16" id="events">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center">Upcoming Events</h2>
+        <p class="text-xl text-gray-600 mt-4 text-center">Check out some of the exciting events that we have planned for you.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div class="card p-4 bg-white shadow-lg rounded-lg">
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMHBhcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wedding party" class="w-full h-48 object-cover rounded-t-lg"/>
+            <div class="content p-4">
+              <p class="text-gray-500">25 Sep 2023</p>
+              <h3 class="text-2xl font-semibold">Wedding Party</h3>
+              <p class="text-gray-500 mt-2">Join us for a celebration of love and happiness as we witness the union of two souls. Enjoy the music, the food, and the company of your friends and family.</p>
+            </div>
+          </div>
+          <div class="card p-4 bg-white shadow-lg rounded-lg">
+            <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXklMjBwYXJ0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Birthday party" class="w-full h-48 object-cover rounded-t-lg"/>
+            <div class="content p-4">
+               <p class="text-gray-500">10 Oct 2023</p>
+              <h3 class="text-2xl font-semibold">Birthday Party</h3>
+              <p class="text-gray-500 mt-2">Celebrate your special day with us and make it unforgettable. We have everything you need to make your birthday party a blast, from balloons and cake to games and entertainment.</p>
+            </div>
+          </div>
+          <div class="card p-4 bg-white shadow-lg rounded-lg">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlJTIwZXZlbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Corporate event" class="w-full h-48 object-cover rounded-t-lg"/>
+            <div class="content p-4">
+              <p class="text-gray-500">17 Oct 2023</p>
+              <h3 class="text-2xl font-semibold">Corporate Event</h3>
+              <p class="text-gray-500 mt-2">Boost your business and network with potential partners at our corporate event. We offer a professional and engaging environment for you to showcase your products and services, learn from industry experts, and connect with other entrepreneurs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Book Us Now -->
+
+  <section class="py-12" id="bookusnow">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center justify-center">
+        <!-- Left column -->
+        <div class="w-full md:w-1/2 lg:w-1/3 text-center md:text-left mb-4 md:mb-0">
+          <h2 class=" text-4xl font-bold">Book us now</h2>
+          <p class=" text-lg">We are the best event company in South Africa. We can make your celebration unforgettable.</p>
+        </div>
+        <!-- Right column -->
+        <div class="w-full md:w-1/2 lg:w-2/3">
+          <!-- Form -->
+          <form id="book-form" class="bg-white rounded-lg shadow-lg p-6">
+            <!-- Name input -->
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 text-sm font-medium">Name</label>
+              <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <!-- Email input -->
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 text-sm font-medium">Email</label>
+              <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <!-- Phone input -->
+            <div class="mb-4">
+              <label for="phone" class="block text-gray-700 text-sm font-medium">Phone</label>
+              <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <!-- Event type input -->
+            <div class="mb-4">
+              <label for="event-type" class="block text-gray-700 text-sm font-medium">Event type</label>
+              <select id="event-type" name="event-type" class="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option value="">Select an option</option>
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="corporate">Corporate</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <!-- Event date input -->
+            <div class="mb-4">
+              <label for="event-date" class="block text-gray-700 text-sm font-medium">Event date</label>
+              <input type="date" id="event-date" name="event-date" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+            </div>
+            <!-- Submit button -->
+            <div class="text-center md:text-right">
+              <button type="submit" id="submit-button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md  bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-offset-gray-50 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container mx-auto py-8 px-4">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/3 px-4 mb-4 md:mb-0">
+          <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+          <p class="mb-2">123 Main Street</p>
+          <p class="mb-2">Johannesburg, Gauteng 2000</p>
+          <p class="mb-2">South Africa</p>
+          <p class="mb-2">Phone: +27 11 123 4567</p>
+          <p>Email: info@celebrationstation.co.za</p>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-4 md:mb-0">
+          <h2 class="text-lg font-bold mb-4">About Us</h2>
+          <p class="mb-2">Celebration Station is a leading event management company in South Africa. We specialize in organizing corporate events, weddings, and private parties. Our team of experienced professionals is dedicated to making your event a success.</p>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-4 md:mb-0">
+          <h2 class="text-lg font-bold mb-4">Follow Us</h2>
+          <ul class="list-none">
+            <li><a href="#" class="hover:text-gray-400">Facebook</a></li>
+            <li><a href="#" class="hover:text-gray-400">Twitter</a></li>
+            <li><a href="#" class="hover:text-gray-400">Instagram</a></li>
+            <li><a href="#" class="hover:text-gray-400">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-gray-800 my-8">
+      <div class="flex justify-between items-center">
+        <p>&copy; 2023 Celebration Station. All rights reserved.</p>
+        <ul class="list-none flex space-x-4">
+          <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-gray-400">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
