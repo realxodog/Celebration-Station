@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="https://th.bing.com/th/id/OIG.nwnlvyFKE80Vw2LK2Y6b?pid=ImgGn" type="image/x-icon">
   <title>Celebration Station</title>
   <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body class="bg-gray-100">
     
@@ -128,38 +129,46 @@
 
   <!-- Upcoming Events -->
 
-  <div class="py-16" id="events">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center">Upcoming Events</h2>
-        <p class="text-xl text-gray-600 mt-4 text-center">Check out some of the exciting events that we have planned for you.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          <div class="card p-4 bg-white shadow-lg rounded-lg">
-            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMHBhcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wedding party" class="w-full h-48 object-cover rounded-t-lg"/>
+  <div class="container mx-auto px-4" id="events">
+    <h1 class="text-4xl font-bold text-center my-8">Upcoming Events</h1>
+    <p class="text-xl text-gray-600 mt-4 text-center mb-4">Check out some of the exciting events that we have planned for you.</p>
+    <div class="swiper-container rounded-lg">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-center">
+          <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXklMjBwYXJ0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Event 1" class="w-full h-full object-cover">
+          <div class="swiper-caption bg-gray-900 bg-opacity-50 p-4 text-white">
             <div class="content p-4">
-              <p class="text-gray-500">25 Sep 2023</p>
-              <h3 class="text-2xl font-semibold">Wedding Party</h3>
-              <p class="text-gray-500 mt-2">Join us for a celebration of love and happiness as we witness the union of two souls. Enjoy the music, the food, and the company of your friends and family.</p>
-            </div>
+              <p class="text-white">10 Oct 2023</p>
+             <h3 class="text-2xl font-semibold">Birthday Party</h3>
+             <p class="text-white mt-2">Celebrate your special day with us and make it unforgettable. We have everything you need to make your birthday party a blast, from balloons and cake to games and entertainment.</p>
+           </div>
           </div>
-          <div class="card p-4 bg-white shadow-lg rounded-lg">
-            <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXklMjBwYXJ0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Birthday party" class="w-full h-48 object-cover rounded-t-lg"/>
+        </div>
+        <div class="swiper-slide bg-center">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlJTIwZXZlbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Event 2" class="w-full h-full object-cover">
+          <div class="swiper-caption bg-gray-900 bg-opacity-50 p-4 text-white">
             <div class="content p-4">
-               <p class="text-gray-500">10 Oct 2023</p>
-              <h3 class="text-2xl font-semibold">Birthday Party</h3>
-              <p class="text-gray-500 mt-2">Celebrate your special day with us and make it unforgettable. We have everything you need to make your birthday party a blast, from balloons and cake to games and entertainment.</p>
-            </div>
-          </div>
-          <div class="card p-4 bg-white shadow-lg rounded-lg">
-            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlJTIwZXZlbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Corporate event" class="w-full h-48 object-cover rounded-t-lg"/>
-            <div class="content p-4">
-              <p class="text-gray-500">17 Oct 2023</p>
+              <p class="text-white">17 Oct 2023</p>
               <h3 class="text-2xl font-semibold">Corporate Event</h3>
-              <p class="text-gray-500 mt-2">Boost your business and network with potential partners at our corporate event. We offer a professional and engaging environment for you to showcase your products and services, learn from industry experts, and connect with other entrepreneurs.</p>
+              <p class="text-white mt-2">Boost your business and network with potential partners at our corporate event. We offer a professional and engaging environment for you to showcase your products and services, learn from industry experts, and connect with other entrepreneurs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide bg-center">
+          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMHBhcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Event 3" class="w-full h-full object-cover">
+          <div class="swiper-caption bg-gray-900 bg-opacity-50 p-4 text-white">
+            <div class="content p-4">
+              <p class="text-white">25 Sep 2023</p>
+              <h3 class="text-2xl font-semibold">Wedding Party</h3>
+              <p class="text-white mt-2">Join us for a celebration of love and happiness as we witness the union of two souls. Enjoy the music, the food, and the company of your friends and family.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
+
+  
 
   <!-- Book Us Now -->
 
@@ -255,7 +264,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script src="main.js"></script>
+ 
 
 </body>
 </html>
