@@ -10,10 +10,28 @@ function toggleMenu() {
 }
 
 // Hero
-window.addEventListener("load", function() {
-  var btn = document.querySelector(".btn");
-  btn.classList.add("animate-bounce");
-});
+
+var heroImage = document.querySelector("https://th.bing.com/th/id/OIG.Qu9bDFHYV5LFefwIyeEX?pid=ImgGn");
+
+// Get the current hour
+var hour = new Date().getHours();
+
+// Define different images for different times of the day
+var morningImage = "https://th.bing.com/th/id/OIG.mM26yucqSDeb3QjTTTiS?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn";
+var afternoonImage = "https://th.bing.com/th/id/OIG.BTe7KUSk2B3C4pOCeV5G?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn";
+var eveningImage = "https://th.bing.com/th/id/OIG.1QdvYT5uhtR1bG_un549?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn";
+
+// Change the hero image source based on the hour
+if (hour >= 6 && hour < 12) {
+  // Morning
+  heroImage.src = morningImage;
+} else if (hour >= 12 && hour < 18) {
+  // Afternoon
+  heroImage.src = afternoonImage;
+} else {
+  // Evening
+  heroImage.src = eveningImage;
+}
 
 // Booking
 
